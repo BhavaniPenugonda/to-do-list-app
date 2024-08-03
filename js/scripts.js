@@ -18,3 +18,16 @@ function crossOut() {
 
 li.addEventListener('dblclick',crossOut);
 
+
+
+// Adding the delete button "X" //
+let crossOutButton = document.createElement('crossOutButton');
+crossOutButton.appendChild(document.createTextNode('X'));
+li.appendChild(crossOutButton);
+
+crossOutButton.addEventListener('click', deleteListItem);
+// Adding CLASS DELETE (DISPLAY: NONE) from the css //
+function deleteListItem(){
+  li.classList.add('delete');
+}
+
