@@ -6,7 +6,9 @@ let li = $('<li></li>');
   if (inputValue === '') {
     alert('Add an element');
   } else {
-    $('#list').append(li);
+    let list = $('#list');
+        list.append(li);
+        $('#input').val(''); 
   }
 }
 
