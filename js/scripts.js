@@ -31,3 +31,6 @@ function deleteListItem(){
   li.classList.add('delete');
 }
 
+// Reordering the items //
+$('#list').sortable();
+
