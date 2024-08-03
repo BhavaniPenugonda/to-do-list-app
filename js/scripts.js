@@ -9,3 +9,12 @@ let li = $('<li></li>');
     $('#list').append(li);
   }
 }
+
+
+//Crossing out an item from the list of items //
+function crossOut() {
+  li.classList.toggle("strike");
+}
+
+li.addEventListener('dblclick',crossOut);
+
