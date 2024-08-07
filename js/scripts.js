@@ -10,7 +10,7 @@ let li = $('<li></li>');
         list.append(li);
         $('#input').val(''); 
   }
-}
+
 
 
 //Crossing out an item from the list of items //
@@ -37,4 +37,6 @@ function deleteListItem(){
 
 // Reordering the items //
 $('#list').sortable();
+
+}
 
